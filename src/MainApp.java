@@ -16,7 +16,7 @@ public class MainApp {
         person2.sayHello("AST");
         System.out.println(person2.sayAddress());
 
-        
+
         System.out.println();
 
 
