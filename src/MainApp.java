@@ -25,8 +25,14 @@ public class MainApp {
 
 //        Implementasi method parent class
         person1.greeting();
+        System.out.println();
+
         teacher1.greeting();
+        System.out.println();
+
         doctor1.greeting();
+        System.out.println();
+
         programmer1.greeting();
     }
 }
