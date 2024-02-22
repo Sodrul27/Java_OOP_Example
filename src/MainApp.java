@@ -7,5 +7,14 @@ public class MainApp {
         System.out.println(person1.name);
         System.out.println(person1.address);
         System.out.println(person1.country);
+
+        person1.sayHello("AST");
+        System.out.println();
+
+        Person person2 = new Person();
+        person2.name = "Sodrul";
+        person2.address = "Demak";
+        person2.sayHello("AST");
+        System.out.println(person2.sayAddress());
     }
 }
