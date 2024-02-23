@@ -7,8 +7,7 @@ public class Teacher extends Person {
 
 //    Method overreding pada child class Teacher
     void greeting(){
-        System.out.println("Hello my name is " + name + ".");
-        System.out.println("I come from " + address + ".");
+        super.greeting(); // Memanggil method dari parent atau person class
         System.out.println("My job is a " + subject + " teacher.");
     }
 }
