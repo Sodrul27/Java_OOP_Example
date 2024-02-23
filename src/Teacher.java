@@ -1,6 +1,14 @@
 public class Teacher extends Person {
     String subject;
 
+    public Teacher(){
+
+    }
+
+    public Teacher(String name, String address, String subject){
+        super(name,address); // ini adalah super constructor dari parent class
+        this.subject = subject;
+    }
     void teaching(){
         System.out.println("I can tech " + subject + ", so anyone how wants to learn can talk to me.");
     }

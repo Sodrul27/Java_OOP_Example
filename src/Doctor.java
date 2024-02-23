@@ -6,7 +6,7 @@ public class Doctor extends Person{
     }
 
     public Doctor(String name, String address, String specialist){
-        super(name, address); // memanggil field dari parent class
+        super(name, address); // ini adalah super constructor dari parent class
         this.specialist = specialist;
     }
 
