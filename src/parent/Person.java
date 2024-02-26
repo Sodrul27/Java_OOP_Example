@@ -1,7 +1,7 @@
 package parent;
 public class Person {
-    public String name;
-    public String address;
+    private String name;
+    private String address;
 
     public Person(String name, String address){
         super();
@@ -16,5 +16,22 @@ public class Person {
     public void greeting(){
         System.out.println("Hello my name is " + name + ".");
         System.out.println("I come from " + address + ".");
+    }
+
+//    Encapsulation menggunakan getter dan setter
+    public String getName(){
+        return this.name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getAddress(){
+        return this.address;
+    }
+
+    public void setAddress(String address){
+        this.address = address;
     }
 }

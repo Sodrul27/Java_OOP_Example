@@ -3,7 +3,7 @@ package child;
 import parent.Person;
 
 public class Doctor extends Person {
-    public String specialist;
+    private String specialist;
 
     public Doctor(){
 
@@ -22,5 +22,14 @@ public class Doctor extends Person {
     public void greeting(){
        super.greeting(); // Memanggil method dari parent atau person class
         System.out.println("My occupation is a " + specialist + " child.Doctor.");
+    }
+
+    //    Encapsulation menggunakan getter dan setter
+    public String getSpecialist() {
+        return this.specialist;
+    }
+
+    public void setSpecialist(String specialist) {
+        this.specialist = specialist;
     }
 }

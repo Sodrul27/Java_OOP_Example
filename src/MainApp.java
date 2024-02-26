@@ -8,13 +8,6 @@ public class MainApp {
 
 
         Person person1 = new Programmer("Ahmad", "Tangerang", "Java"); // Object 1
-        /*
-        bila ingin mengambil field pada child class tapi menggunakan type data
-        parent class maka perlu dilakukan Type check & Casts seperti dibawah.
-        */
-        System.out.println(((Programmer)person1).technology);
-
-
         Person person2 = new Teacher("Mufa", "Demak", "B.Inggris"); // Object 2
         Person person3 = new Doctor("Sodrul", "Parung", "Bedah"); // Object 3
 
@@ -35,15 +28,15 @@ public class MainApp {
         String message;
         if(person instanceof Programmer){
             Programmer programmer = (Programmer) person;
-            message = "Hello " + programmer.name + ". Seorang child.Programmer " + programmer.technology + ".";
+            message = "Hello " + programmer.getName() + ". Seorang child.Programmer " + programmer.getTechnology() + ".";
         } else if (person instanceof Teacher) {
             Teacher teacher = (Teacher) person;
-            message = "Hello " + teacher.name + ". Seorang Guru " + teacher.subject + ".";
+            message = "Hello " + teacher.getName() + ". Seorang Guru " + teacher.getSubject() + ".";
         } else if (person instanceof Doctor) {
             Doctor doctor = (Doctor) person;
-            message = "Hello " + doctor.name + ". Seorang Docter " + doctor.specialist + ".";
+            message = "Hello " + doctor.getName() + ". Seorang Docter " + doctor.getSpecialist() + ".";
         } else {
-            message = "Hello " + person.name + ".";
+            message = "Hello " + person.getName() + ".";
         }
         System.out.println(message);
     }
