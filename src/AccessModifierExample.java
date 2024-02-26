@@ -1,19 +1,19 @@
 public class AccessModifierExample {
-//    Access Modifier default
-    String name;
-    String address;
+//    Access Modifier protected
+    protected String name;
+    protected String address;
 
-//    contoh method menggunakan Modifier default
-    void sayHello(){
+//    contoh method menggunakan Modifier protected
+    protected void sayHello(){
 
     }
 
-//    Access MOdifier Public
-    public String nama;
-    public String alamat;
+//    Access MOdifier private
+    private String nama;
+    private String alamat;
 
-//    contoh method menggunakan modifier public
-    public void ucapan(){
+//    contoh method menggunakan modifier private
+    private void ucapan(){
 
     }
 }
