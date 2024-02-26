@@ -1,4 +1,7 @@
-import javax.print.Doc;
+import child.Doctor;
+import child.Programmer;
+import child.Teacher;
+import parent.Person;
 
 public class MainApp {
     public static void main(String[] args) {
@@ -32,7 +35,7 @@ public class MainApp {
         String message;
         if(person instanceof Programmer){
             Programmer programmer = (Programmer) person;
-            message = "Hello " + programmer.name + ". Seorang Programmer " + programmer.technology + ".";
+            message = "Hello " + programmer.name + ". Seorang child.Programmer " + programmer.technology + ".";
         } else if (person instanceof Teacher) {
             Teacher teacher = (Teacher) person;
             message = "Hello " + teacher.name + ". Seorang Guru " + teacher.subject + ".";

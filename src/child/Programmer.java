@@ -1,5 +1,9 @@
-public class Programmer extends Person{
-    String technology;
+package child;
+
+import parent.Person;
+
+public class Programmer extends Person {
+    public String technology;
 
     public Programmer(){
 
@@ -10,17 +14,17 @@ public class Programmer extends Person{
         this.technology = technology;
     }
 
-    void hacking(){
+    public void hacking(){
         System.out.println("I can hacking a website");
     }
 
-    void coding(){
+    public void coding(){
         System.out.println("I can create a application using technology : " + technology + ".");
     }
 
 //    Method overreding pada child class programmer
-    void greeting(){
+    public void greeting(){
         super.greeting(); // Memanggil method dari parent atau person class
-        System.out.println("My occupation is a " + technology + " Programmer.");
+        System.out.println("My occupation is a " + technology + " child.Programmer.");
     }
 }

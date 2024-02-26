@@ -1,6 +1,7 @@
+package parent;
 public class Person {
-    String name;
-    String address;
+    public String name;
+    public String address;
 
     public Person(String name, String address){
         super();
@@ -12,7 +13,7 @@ public class Person {
         super();
     }
 
-    void greeting(){
+    public void greeting(){
         System.out.println("Hello my name is " + name + ".");
         System.out.println("I come from " + address + ".");
     }

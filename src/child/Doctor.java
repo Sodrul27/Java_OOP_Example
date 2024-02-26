@@ -1,5 +1,9 @@
-public class Doctor extends Person{
-    String specialist;
+package child;
+
+import parent.Person;
+
+public class Doctor extends Person {
+    public String specialist;
 
     public Doctor(){
 
@@ -10,13 +14,13 @@ public class Doctor extends Person{
         this.specialist = specialist;
     }
 
-    void surgery(){
+    public void surgery(){
         System.out.println("I can surgery operation patients");
     }
 
 //    Method overreding pada child class doctor
-    void greeting(){
+    public void greeting(){
        super.greeting(); // Memanggil method dari parent atau person class
-        System.out.println("My occupation is a " + specialist + " Doctor.");
+        System.out.println("My occupation is a " + specialist + " child.Doctor.");
     }
 }

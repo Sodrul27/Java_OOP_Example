@@ -1,5 +1,9 @@
+package child;
+
+import parent.Person;
+
 public class Teacher extends Person {
-    String subject;
+    public String subject;
 
     public Teacher(){
 
@@ -9,12 +13,12 @@ public class Teacher extends Person {
         super(name,address); // ini adalah super constructor dari parent class
         this.subject = subject;
     }
-    void teaching(){
+    public void teaching(){
         System.out.println("I can tech " + subject + ", so anyone how wants to learn can talk to me.");
     }
 
-//    Method overreding pada child class Teacher
-    void greeting(){
+//    Method overreding pada child class child.Teacher
+    public void greeting(){
         super.greeting(); // Memanggil method dari parent atau person class
         System.out.println("My job is a " + subject + " teacher.");
     }
